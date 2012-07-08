@@ -1,0 +1,20 @@
+{
+  "name": "node-waitpid",
+  "version": "0.1.0",
+  "description": "A node.js binding to the waitpid() syscall.",
+  "main": "lib/waitpid.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AvianFlu/node-waitpid.git"
+  },
+  "keywords": [
+    "waitpid",
+    "child process"
+  ],
+  "author": "AvianFlu",
+  "license": "MIT",
+  "gypfile": true
+}

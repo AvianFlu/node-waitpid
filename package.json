@@ -1,5 +1,5 @@
 {
-  "name": "node-waitpid",
+  "name": "waitpid",
   "version": "0.1.0",
   "description": "A node.js binding to the waitpid() syscall.",
   "main": "lib/waitpid.js",

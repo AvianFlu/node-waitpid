@@ -43,3 +43,6 @@ extern "C" void init(Handle<Object> target) {
   HandleScope scope;
   NODE_SET_METHOD(target, "waitpid", Waitpid);
 }
+
+
+NODE_MODULE(waitpid, init)

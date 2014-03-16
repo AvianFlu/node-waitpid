@@ -16,6 +16,7 @@ static Handle<Value> Waitpid(const Arguments& args) {
     child = args[0]->Int32Value();
 
     do {
+      usleep(1000);
       r = waitpid(child, &status, WNOHANG);
     } while (r != -1);
 

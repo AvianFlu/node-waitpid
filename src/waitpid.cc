@@ -15,9 +15,7 @@ static Handle<Value> Waitpid(const Arguments& args) {
   if (args[0]->IsInt32()) {
     child = args[0]->Int32Value();
 
-    do {
-      r = waitpid(child, &status, WNOHANG);
-    } while (r != -1);
+    r = waitpid(child, &status, NULL);
 
     Local<Object> result = Object::New();
 

@@ -16,7 +16,7 @@ static Handle<Value> Waitpid(const Arguments& args) {
     child = args[0]->Int32Value();
 
     do {
-      r = waitpid(child, &status, WNOHANG);
+      r = waitpid(child, &status, 0);
     } while (r != -1);
 
     Local<Object> result = Object::New();
